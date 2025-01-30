@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
         body.style.fontFamily = "Courier";
 
         wrapper.style.backgroundColor = "lightgrey";
-        wrapper.style.padding = "25px"
+        wrapper.style.padding = "35px"
         wrapper.style.display = "flex";
         wrapper.style.flexDirection = "column";
         wrapper.style.justifyContent = "center";
         wrapper.style.alignItems = "center";
         wrapper.style.gap = "10px";
-        wrapper.style.borderRadius = "10px"
+        wrapper.style.borderRadius = "30px";
 
         container.style.display = "flex";
         container.style.flexWrap = "wrap";
@@ -43,9 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
             box.style.height = boxSize;
             box.style.border = "1px solid black";
             box.style.boxSizing = "border-box";
+
+            function getRandomColor() {
+                return `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`;
+            }
     
             box.addEventListener("mouseover", () => {
-                box.style.backgroundColor = "blue";
+                box.style.backgroundColor = getRandomColor();
             })
     
             container.appendChild(box);
