@@ -23,5 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
         box.style.border = "1px solid black";
         box.style.boxSizing = "border-box";
         container.appendChild(box);
+
+        box.addEventListener("mouseover", () => {
+            box.style.backgroundColor = "blue";
+        })
     }
 });
