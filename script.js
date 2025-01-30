@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector("#container");
     const button = document.querySelector("#button");
     const body = document.querySelector("body");
+    const wrapper = document.querySelector("#wrapper");
     const maxSize = 100;
     const containerSize = 800
 
@@ -10,11 +11,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
         body.style.display = "flex";
         body.style.flexDirection = "column";
-        body.style.gap = "10px";
         body.style.justifyContent = "center";
         body.style.alignItems = "center"
         body.style.height = "100vh";
         body.style.margin = "0";
+        body.style.backgroundColor = "rgb(17 24 39)";
+        body.style.fontFamily = "Courier";
+
+        wrapper.style.backgroundColor = "lightgrey";
+        wrapper.style.padding = "25px"
+        wrapper.style.display = "flex";
+        wrapper.style.flexDirection = "column";
+        wrapper.style.justifyContent = "center";
+        wrapper.style.alignItems = "center";
+        wrapper.style.gap = "10px";
+        wrapper.style.borderRadius = "10px"
 
         container.style.display = "flex";
         container.style.flexWrap = "wrap";
@@ -22,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.style.height = `${containerSize}px`;
         container.style.justifyContent = "center";
         container.style.alignItems = "center";
+        container.style.backgroundColor = "lightgrey";
 
         const boxSize = `${containerSize / gridSize}px`;
 
